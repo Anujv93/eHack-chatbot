@@ -1,26 +1,13 @@
+from .profile_extractor import extract_profile_llm
+
+
 def update_profile_from_query(state):
-    query = state["query"].lower()
-    profile = state.get("profile", {})
+    query = state["query"]
+    existing_profile = state.get("profile", {})
 
-    # Infer qualification
-    if "btech" in query or "b.tech" in query:
-        profile["qualification"] = "B.Tech"
-    elif "12th" in query:
-        profile["qualification"] = "12th pass"
-    elif "graduate" in query:
-        profile["qualification"] = "Graduate"
+    updated_profile = extract_profile_llm(query, existing_profile)
 
-    # Infer background
-    if "non tech" in query or "non-technical" in query:
-        profile["background"] = "non-technical"
-    elif "developer" in query or "it" in query:
-        profile["background"] = "technical"
-
-    # Infer career goal
-    if any(x in query for x in ["job", "career", "switch"]):
-        profile["career_goal"] = query
-
-    return {"profile": profile}
+    return {"profile": updated_profile}
 
 
 def should_ask_profile_question(state):
@@ -28,7 +15,7 @@ def should_ask_profile_question(state):
 
     if "career_goal" not in profile:
         return {
-            "reply": "Before I suggest anything, what kind of career are you aiming for?",
+            "reply": "What kind of career are you aiming for?",
             "ask_profile": True,
         }
 
