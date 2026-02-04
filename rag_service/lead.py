@@ -2,6 +2,16 @@ import re
 from .save_lead import save_lead_to_file
 
 
+def should_collect_lead(state):
+    profile = state.get("profile", {})
+    history_len = len(state.get("history", []))
+
+    # Only ask for lead when user is engaged and goal is known
+    if history_len >= 4 and "career_goal" in profile:
+        return {"ask_lead": True}
+
+    return {"ask_lead": False}
+
 def extract_name_phone(text: str):
     phone_match = re.search(r"\b[6-9]\d{9}\b", text)
     name_match = re.search(r"(my name is|i am)\s+([a-zA-Z ]+)", text, re.I)
