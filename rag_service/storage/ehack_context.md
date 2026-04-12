@@ -1,7 +1,6 @@
 # eHack Academy — AI Chatbot Knowledge Base
 
 > **Instructions for editing this document:**
-> - Lines marked `[FILL IN]` need to be completed by the eHack team before this file is loaded into the RAG.
 > - Keep all URLs exactly as shown — the chatbot uses them to generate clickable course links.
 > - The **Response Style** section controls HOW the bot answers. Edit it to match your brand voice.
 > - Add or remove courses from the catalogue sections as your offerings change.
@@ -21,8 +20,11 @@
 **Contact Email:** info@ehackacademy.com  
 **WhatsApp:** https://wa.me/919886035330  
 **Location:** No. 202, I Floor, New BEL Road, Opposite HP Petrol Pump, Bangalore – 560094  
-**Working Hours:** [FILL IN — e.g., Mon–Sat 9 AM – 7 PM IST]  
+**Working Hours:** Monday–Saturday, 9 AM – 7 PM IST  
 **Response Time:** Typically within 2–4 hours during business hours  
+**Experience:** 11+ years of expertise in cybersecurity training  
+**Students Impacted:** 50,000+ students across 100+ institutions including MS Ramaiah, PES, and Christ University  
+**Certification Pass Rate:** 95%+ first-attempt pass rate for global certifications
 
 ---
 
@@ -38,7 +40,32 @@ Use these points when students ask "Why should I choose eHack?"
 - ✅ **Multiple Learning Formats** — Live Online, Classroom, 1-on-1, Fly-Me-a-Trainer, Flexi, Customized, Webinar-as-a-Service
 - ✅ **Globally Recognized Partners** — EC-Council, ISACA, ISC2, CompTIA, Cisco, Offensive Security, Kennedy University
 - ✅ **Community & CSR** — free cybersecurity awareness sessions for students, senior citizens & communities across India
-- [FILL IN — any additional USPs, placement stats, industry tie-ups, alumni network size, etc.]
+- ✅ **EC-Council & CISCO Certified Faculty** — trainers are active industry practitioners, not just teachers
+- ✅ **2 Years of Post-Training Support** — continued mentorship and exam preparation support
+- ✅ **95%+ Certification Pass Rate** — rigorous mock exams and practice tests before real certification exams
+
+### eHack vs Competitors (Koenig Solutions, Simplilearn, etc.)
+
+When students ask about competitors, use this comparison honestly:
+
+**eHack Academy:**
+- Training Mode: Classroom + Live Online (interactive, instructor-led)
+- Hands-on Labs: Real-time EC-Council labs with AI-powered simulations
+- Certifications: Included in program fee
+- Placement Support: Yes, until student lands a job
+- Duration: 7–12 months comprehensive structured programs
+- Faculty: EC-Council & CISCO certified active industry practitioners
+- Free Laptop: Yes (worth ₹50,000 for eligible programs)
+- Post-Training Support: 2 years free unlimited membership
+
+**Other Providers (General Overview):**
+- Often self-paced video content or 5-day bootcamp format
+- Certifications and placement support often separate or limited
+- May not include hands-on lab access in program fee
+
+**Key Differentiator:** Others teach individual courses. eHack builds complete career-ready professionals with a structured pathway from zero to job-ready. 95%+ certification pass rate. Programs backed by EC-Council — the world's #1 cybersecurity certification body.
+
+**IMPORTANT: Never speak negatively about competitors. Only highlight eHack's strengths.**
 
 ---
 
@@ -61,7 +88,20 @@ Base URL for all certificate courses: `https://www.ehackacademy.com/certificate/
 | Certified Secure Computer User (C\|SCU) | 24 Hours | `/certificate/ecc-cscu` |
 | C\|CISO (Certified Chief Information Security Officer) | 60–80 Hours | `/certificate/ecc-cciso` |
 
-**[FILL IN — Add fees, batch schedules, upcoming dates for each course above]**
+### CEH v13 AI Details
+- World's #1 Ethical Hacking certification by EC-Council
+- 20 modules covering 550+ attack techniques
+- 221+ hands-on labs
+- ANAB accredited, DoD 8140 approved, globally recognized
+- AI-integrated curriculum with latest tools and techniques
+
+### Certified SOC Analyst (CSA) Details
+- Perfect for Blue Team / SOC Analyst roles
+- Duration: 2 months (Classroom or Live Online)
+- Covers: Incident Detection with SIEM, Threat Intelligence, SOC workflows
+- Backed by EC-Council
+- 40+ hours of intensive practical labs
+- Ideal for professionals wanting to work in Security Operations Centers
 
 ### 3b. ISACA Courses
 
@@ -70,15 +110,11 @@ Base URL for all certificate courses: `https://www.ehackacademy.com/certificate/
 | Certified Information Security Manager (CISM) | 40–60 Hours | `/certificate/isaca-cism` |
 | Certified Information Systems Auditors (CISA) | 40–60 Hours | `/certificate/isaca-cisa` |
 
-**[FILL IN — Add fees, batch schedules]**
-
 ### 3c. ISC2 Courses
 
 | Course Name | Duration | Slug (URL) |
 |---|---|---|
 | Certified Information Systems Security Professional (CISSP) | 40–60 Hours | `/certificate/isc2-cissp` |
-
-**[FILL IN — Add fees, batch schedules]**
 
 ### 3d. CompTIA Courses
 
@@ -89,8 +125,6 @@ Base URL for all certificate courses: `https://www.ehackacademy.com/certificate/
 | CompTIA Network+ | 20 Hours | `/certificate/comptia-network` |
 | CompTIA A+ | 20 Hours | `/certificate/comptia-a` |
 
-**[FILL IN — Add fees, batch schedules]**
-
 ### 3e. Cisco Courses
 
 | Course Name | Duration | Slug (URL) |
@@ -99,15 +133,11 @@ Base URL for all certificate courses: `https://www.ehackacademy.com/certificate/
 | Cisco CCNP | 40–60 Hours | `/certificate/cisco-ccnp` |
 | Cisco CCNA Security | 40–60 Hours | `/certificate/cisco-ccnas` |
 
-**[FILL IN — Add fees, batch schedules]**
-
 ### 3f. Offensive Security (OffSec)
 
 | Course Name | Duration | Slug (URL) |
 |---|---|---|
 | OSCP (Offensive Security Certified Professional) | 3 Months | `/certificate/oscp` |
-
-**[FILL IN — Add fees, batch schedules]**
 
 ---
 
@@ -117,45 +147,309 @@ Base URL: `https://www.ehackacademy.com/programs/`
 
 ### 4a. Cybersecurity Programs
 
-**Certified Ethical Hacker Master Program — CEH AI v13**
-- Certifications: 3 Global Certifications
-- Highlights: AI-powered labs, real-world ethical hacking, fully proctored practical exam, job-ready in 5 days
-- URL: https://www.ehackacademy.com/programs/masterclass-ethical-hacking-ceh-v13
-- [FILL IN — Duration, fees, eligibility]
-
-**Graduate Program in Ethical Hacking and Cybersecurity AI**
-- Certifications: 2 Global Certifications
+**Graduate Program in Ethical Hacking and Cybersecurity AI** ⭐ MOST RECOMMENDED
+- Certifications: 2 Global EC-Council Certifications (CSCU + CND)
+- Duration: 7–9 months of structured classroom + live online training
+- Training Hours: 200+ hours of hands-on labs and real-world projects
+- Fee: ₹1,50,000
+- EMI Option: ₹51,000 upfront + 4 monthly EMIs of ₹29,750
 - Highlights: Industry-integrated curriculum, live labs, real attack simulations, career-launch focused
 - URL: https://www.ehackacademy.com/programs/graduate-cybersecurity
 - Bonus: **Free Laptop worth ₹50,000** for eligible students
-- [FILL IN — Duration, fees, eligibility]
+- Internship support included
+- Placement assistance through EHACK Global Technology
+- AI-integrated latest curriculum
+- 2 years free unlimited membership
+- No prior experience needed — starts from fundamentals
+- Best for: Students, fresh graduates, beginners, career switchers, budget-conscious learners, non-IT backgrounds
+- Open to all educational backgrounds (Commerce, Arts, Science, Engineering, Management)
 
-**Master's Program in Ethical Hacking & Cybersecurity AI**
-- Certifications: 6 Global Certifications
+**Advanced Diploma Option (Budget-Friendly Alternative)**
+- Fee: ₹90,000 (Original ₹1,20,000)
+- Same quality curriculum and expert trainers as Graduate Program
+- Does NOT include international exam vouchers (main difference from Graduate Program)
+- EMI: ₹30,000 upfront + 4 EMIs of ₹17,500/month
+- All other benefits same: placement support, 200+ hours of training, 2 years post-training support
+
+**Master's Program in Ethical Hacking & Cybersecurity AI** (PREMIUM)
+- Certifications: 6 Global Certifications (includes CEH + 5 more)
+- Duration: 9–12 months comprehensive
+- Training Hours: 300+ hours of hands-on labs
+- Fee: ₹3,50,000
+- EMI: Upfront admission fee + manageable monthly splits over training duration
 - Highlights: Advanced AI-driven cybersecurity mastery, enterprise attack simulations, leadership career acceleration
 - URL: https://www.ehackacademy.com/programs/masters-ethical-hacking
 - Bonus: **Free Laptop worth ₹50,000** for eligible students
-- [FILL IN — Duration, fees, eligibility]
+- Best for: Serious aspirants, deeper specialization, premium roles
+- Includes CEH certification
 
-### 4b. Other Programs
+**Certified Ethical Hacker Master Program — CEH AI v13**
+- Certifications: 3 Global Certifications
+- Highlights: AI-powered labs, real-world ethical hacking, fully proctored practical exam, job-ready
+- URL: https://www.ehackacademy.com/programs/masterclass-ethical-hacking-ceh-v13
+- Best for: Candidates wanting CEH-specific certification path
 
-**Digital Marketing Masters Program**
+### How CEH Fits Across Programs
+- Single CEH Course: Included (1 Cert), 60–80 hrs
+- Graduate Program: Does NOT include CEH (has CND + CSCU instead)
+- Master's Program: Includes CEH + 5 more certifications (6 total), 9–12 months, ₹3,50,000
+
+### 4b. Digital Marketing Program
+
+**Master's Program in Digital Marketing powered by AI**
+- Duration: 4 months (Full-time: Tue–Sun, 9:30 AM – 6:30 PM)
+- Fee: ₹95,000 (Original ₹1,25,000)
+- Agency-style hands-on program — work on real campaigns, not just theory
+- Curriculum includes:
+  - Website Design & Development (no-code)
+  - Copywriting & Content Strategy
+  - Social Media Marketing
+  - SEO & Paid Advertising (Google + Facebook Ads)
+- Career roles after completion: Social Media Executive, SEO Expert, Digital Marketing Strategist, PPC Specialist
+- Entry salary: ₹3–4 LPA → Senior: ₹15 LPA+
+- New batch starts the 5th of every month
 - URL: https://www.ehackacademy.com/programs/digital-marketing-masterprogram
-- [FILL IN — Duration, certifications, fees, highlights]
 
-**Robotics for Everyone**
+### 4c. Robotics Program
+
+**Certification Program in Robotics for Students**
 - URL: https://www.ehackacademy.com/programs/robotics-for-all
-- [FILL IN — Duration, certifications, fees, highlights]
+- Best for school and college students interested in practical robotics
 
-### 4c. Kennedy University Programs
+### 4d. Data Science Program
+
+**Master's Program in Data Science and Analytics**
+- Best for analytics, data-driven decision-making, future technology roles
+- URL: https://www.ehackacademy.com/programs/data-science
+
+### 4e. Kennedy University Programs
 
 eHack Academy is the training and facilitation partner for Kennedy University programs.
 - URL: https://www.ehackacademy.com/kennedy-university
-- [FILL IN — Available degrees, fees, duration, eligibility, start dates]
+
+**Available Degree Programs:**
+
+| Degree | Duration | Details |
+|---|---|---|
+| B.Sc. in Cyber Security (BSCS) | 1-Year Fast Track | 120 credits, IT Foundations, Network Defense, Ethical Hacking, 6-month intensive internship |
+| M.Sc. in Cyber Security (MSCS) | 1-Year Fast Track | Advanced cybersecurity specialization |
+| Dual Degree (BSCS + MSCS) | Accelerated 15-Month Program | Combined bachelor's and master's |
+
+- All Kennedy University programs include EC-Council certifications, AI-powered labs, and 100% placement assistance
+- Internationally accredited degrees
 
 ---
 
-## 5. COURSE DOMAINS / CATEGORIES
+## 5. CAREER OUTCOME KNOWLEDGE BASE
+
+### Salary Data (Cybersecurity)
+- Entry-level salary (freshers): ₹6–8 LPA
+- Mid-level (3 years experience): ₹12–18 LPA
+- Senior (5+ years experience): ₹25–35 LPA+
+
+### Industry Demand
+- 3.5 million unfilled cybersecurity jobs globally
+- One of the highest-ROI career decisions available
+- Cybersecurity industry is highly skill-driven, not just degree-driven
+- Career gaps don't matter — when you hold globally recognized certifications like CEH v13 or CPENT, companies focus on practical ability
+
+### Placement Support
+- Placement assistance through EHACK Global Technology
+- Resume building sessions
+- Rigorous mock interviews
+- Direct connections with top hiring partners
+- Dedicated Placement Cell
+- 100% Placement Assistance (no legal job guarantee, but robust support)
+- Industry-aligned skills — exactly what companies are hiring for
+
+### Job Roles After Training
+- SOC Analyst
+- Ethical Hacker
+- Security Analyst
+- Penetration Tester
+- Network Security Engineer
+- CISO (Chief Information Security Officer)
+- Incident Responder
+- Threat Intelligence Analyst
+
+### ROI Perspective
+- Graduate Program fee (₹1,50,000) is recovered in the first 2–3 months of first job at ₹6–8 LPA starting salary
+- Certifications increase employability and salary potential significantly
+
+---
+
+## 6. ADMISSIONS & ENROLLMENT PROCESS
+
+### Enrollment Steps
+1. **Step 1:** Pay the Application Fee — ₹1,000 (adjustable in program fee)
+2. **Step 2:** Complete a quick counseling call with admissions team
+3. **Step 3:** Submit documents & finalize payment plan
+4. **Step 4:** Get access to student portal & LMS
+5. **Step 5:** Start training on the 5th of next month
+
+### Batch Schedule
+- New batches start on the **5th of every month**
+- Seats fill up fast — early enrollment recommended
+
+### Payment Options
+| Program | Full Fee | EMI Option |
+|---|---|---|
+| Graduate Program | ₹1,50,000 | ₹51,000 upfront + 4 × ₹29,750/month |
+| Advanced Diploma | ₹90,000 (Original ₹1,20,000) | ₹30,000 upfront + 4 × ₹17,500/month |
+| Master's Program | ₹3,50,000 | Upfront admission + monthly splits |
+| Digital Marketing | ₹95,000 (Original ₹1,25,000) | Contact counsellor for EMI details |
+
+### Eligibility
+- No prior IT experience needed for Graduate Program
+- Open to all educational backgrounds (Commerce, Arts, Science, Engineering, Management)
+- 10+2 / Graduate / Post Graduate / Working Professional — all eligible
+- Open to all educational backgrounds
+
+### Demo Class Policy
+- No standard demo classes (training involves live, progressive lab work)
+- Instead: Free 1-on-1 career counseling call and telephonic interview with industry expert
+- Expert evaluates profile, explains lab environment, shows how training works
+- No obligation, no pressure
+
+---
+
+## 7. LAPTOP & HARDWARE REQUIREMENTS
+
+### Student Laptop Requirements
+- No high-end gaming laptop needed
+- All high-end threat simulations, AI tools, and vulnerable machines hosted on cloud-based virtual labs
+- Basic laptop sufficient: i3/i5 processor, 8GB RAM, stable internet connection
+
+### Free Laptop Offer
+- Students enrolling in premium long-term Master's programs receive Free high-performance Laptop worth ₹50,000
+- Also available for CSA + CCSE bundle (worth ₹1,15,000)
+- Details: https://www.ehackacademy.com/offers/laptop-offer
+
+---
+
+## 8. CERTIFICATION EXAM SUPPORT
+
+### Pass Rate
+- 95%+ first-attempt pass rate for global certifications
+
+### Exam Preparation
+- Rigorous mock exams and practice tests before real certification exam
+- Students are thoroughly prepared before sitting for any exam
+
+### If Student Fails
+- Highly unlikely given 95%+ pass rate
+- Long-term programs include 2 Years of Post-Training Support
+- Continued mentorship and preparation until student passes
+- Student is never left behind
+
+---
+
+## 9. LEARNING FORMATS
+
+| Format | Description | More Info |
+|---|---|---|
+| Live Online Training | Interactive virtual sessions with real-time instructor and AI-powered virtual labs | https://www.ehackacademy.com/learning-options |
+| Classroom Training | Instructor-led in modern Bangalore facility | https://www.ehackacademy.com/learning-options#classroom |
+| 1-on-1 Training | Personalized sessions, your schedule & pace | https://www.ehackacademy.com/learning-options#one-on-one |
+| Fly-Me-a-Trainer | Expert trainers come to your location | https://www.ehackacademy.com/learning-options#fly-trainer |
+| Flexi | Flexible self-paced learning option | https://www.ehackacademy.com/learning-options#flexi |
+| Customized Training | Tailored programs for corporate/team needs | https://www.ehackacademy.com/learning-options#customized |
+| Webinar as a Service | Professional webinar hosting & management | https://www.ehackacademy.com/learning-options#webinar-service |
+
+### For Students Outside Bangalore
+Two options:
+1. **Live Online Training:** Exact same classroom experience from home. Interactive live sessions with real-time access to AI-powered virtual labs.
+2. **Relocate to Bangalore:** Physical classroom training. Counselors can guide to nearby PG and accommodation options.
+Both modes give access to exact same trainers, curriculum, and placement support.
+
+---
+
+## 10. EC-COUNCIL CODERED (Online Library)
+
+### What is CodeRed?
+- EC-Council's premium online learning platform
+- All-access subscription to 500+ premium cybersecurity courses
+- 9,000+ training videos
+- New videos added every month by industry experts
+- Certificate of Attendance for every course
+- Includes Microdegrees to build perpetual skill sets
+- Many Microdegrees include access to iLabs — cloud-based hands-on virtual lab environments
+- Practice penetration testing and network defense while watching tutorials
+
+Instead of buying individual courses for Bug Bounty, Linux, OSINT etc., CodeRed gives all-access subscription.
+
+### CodeRed Course Links
+| Course | Enroll Link |
+|---|---|
+| Capture the Flag | https://coderedcheckout.eccouncil.org/referral/8Z8QkXF5/4yFBnkZGVaDbxF6f |
+| Bug Bounty Hunting Essentials | https://coderedcheckout.eccouncil.org/referral/Us775v10/4yFBnkZGVaDbxF6f |
+| Master Open-Source Intelligence | https://coderedcheckout.eccouncil.org/referral/KtG5Oefw/4yFBnkZGVaDbxF6f |
+| Mastering Digital Forensics | https://coderedcheckout.eccouncil.org/referral/exNKMTJD/4yFBnkZGVaDbxF6f |
+| Ultimate Red Team Cyber Suite | https://coderedcheckout.eccouncil.org/referral/cOXfXsOF/4yFBnkZGVaDbxF6f |
+| ChatGPT for Ethical Hackers | https://coderedcheckout.eccouncil.org/referral/gzESbpRe/4yFBnkZGVaDbxF6f |
+| View Full Library | https://www.ehackacademy.com/codered |
+
+---
+
+## 11. CORPORATE & CSR
+
+### Corporate Training Services
+- VAPT (Vulnerability Assessment & Penetration Testing)
+- Digital Forensics
+- Security Audits
+- Corporate Training (customized programs)
+- Trained staff at major organizations like Bharat Electronics Limited (BEL) and Cashfree
+- Specialize in employee cyber hygiene — teach to identify malicious '.exe' invoices, ransomware traps, social engineering attacks
+- Phishing awareness training for HR and non-IT staff
+- URL: https://www.ehackglobaltechnology.com/services/web-application-security
+
+### CSR & Cyber Awareness
+- Free Cyber Awareness and Employability workshops under CSR Mission
+- Impacted 50,000+ students across 100+ institutions like MS Ramaiah, PES, and Christ University
+- Topics: Social Media Safety & Privacy, Safe UPI & Banking Practices, Career Awareness in Ethical Hacking
+- URL: https://www.ehackacademy.com/csr
+
+### Cyber Empowerment for All Initiative
+- Training senior citizens and non-technical users to identify scams
+- Covers: Digital Arrest scams, FedEx parcel scams, KYC update traps
+- Sessions are simple, non-technical, focused on safe smartphone and UPI usage
+- Completely free as part of community outreach
+- Free weekend awareness webinars available
+- FedEx Drugs in Parcel scam: Teach how scam operates — legitimate couriers/police never demand money transfers over video call
+- URL: https://www.ehackacademy.com/cyber-empowerment
+
+---
+
+## 12. FRANCHISE OPPORTUNITY
+
+eHack Academy offers franchise/partnership models for education entrepreneurs.
+
+### Franchise Models
+| Model | Type | Best For |
+|---|---|---|
+| Prime Model | Fixed Payout | Predictable income, ideal for first-time franchise owners |
+| Master Model | Revenue Sharing | Scalable expansion with recurring revenue |
+| Titan Model | Strategic Share | Designed for large education groups |
+
+### Revenue Streams
+- Classroom training fees
+- Online learning subscriptions
+- Corporate Security Assessments (VAPT services)
+
+### Franchise Partner Gets
+- Complete Academic Delivery & Trainer Support
+- Sales & Counselling Training Framework
+- Centralized Marketing & Brand Support
+- Highly structured Standard Operating Procedures (SOPs)
+
+### Requirements
+- No mandatory cybersecurity background needed to partner
+- Ideal for existing computer training center owners
+- URL: https://www.ehackacademy.com/franchise
+
+---
+
+## 13. COURSE DOMAINS / CATEGORIES
 
 | Domain | URL |
 |---|---|
@@ -167,39 +461,7 @@ eHack Academy is the training and facilitation partner for Kennedy University pr
 
 ---
 
-## 6. EC-COUNCIL CODERED (Online Library)
-
-eHack Academy offers access to EC-Council's CodeRed platform — thousands of premium videos and microdegrees.
-
-| Course | Description | Enroll Link |
-|---|---|---|
-| Capture the Flag | Pentesting skills through CTF exercises | https://coderedcheckout.eccouncil.org/referral/8Z8QkXF5/4yFBnkZGVaDbxF6f |
-| Bug Bounty Hunting Essentials | Practical bug bounty for hackers/pentesters | https://coderedcheckout.eccouncil.org/referral/Us775v10/4yFBnkZGVaDbxF6f |
-| Master Open-Source Intelligence | Advanced OSINT techniques | https://coderedcheckout.eccouncil.org/referral/KtG5Oefw/4yFBnkZGVaDbxF6f |
-| Mastering Digital Forensics | Linux & computer forensics best practices | https://coderedcheckout.eccouncil.org/referral/exNKMTJD/4yFBnkZGVaDbxF6f |
-| Ultimate Red Team Cyber Suite | Red team operations & offensive security | https://coderedcheckout.eccouncil.org/referral/cOXfXsOF/4yFBnkZGVaDbxF6f |
-| ChatGPT for Ethical Hackers | AI tools for ethical hacking | https://coderedcheckout.eccouncil.org/referral/gzESbpRe/4yFBnkZGVaDbxF6f |
-| View Full Library | | https://www.ehackacademy.com/codered |
-
----
-
-## 7. LEARNING FORMATS
-
-When a student asks about how to learn or where to attend:
-
-| Format | Description | More Info |
-|---|---|---|
-| Live Online Training | Interactive virtual sessions with real-time instructor | https://www.ehackacademy.com/learning-options |
-| Classroom Training | Instructor-led in modern Bangalore facility | https://www.ehackacademy.com/learning-options#classroom |
-| 1-on-1 Training | Personalized sessions, your schedule & pace | https://www.ehackacademy.com/learning-options#one-on-one |
-| Fly-Me-a-Trainer | Expert trainers come to your location | https://www.ehackacademy.com/learning-options#fly-trainer |
-| Flexi | Flexible self-paced learning option | https://www.ehackacademy.com/learning-options#flexi |
-| Customized Training | Tailored programs for corporate/team needs | https://www.ehackacademy.com/learning-options#customized |
-| Webinar as a Service | Professional webinar hosting & management | https://www.ehackacademy.com/learning-options#webinar-service |
-
----
-
-## 8. CERTIFICATION BODY PARTNERS
+## 14. CERTIFICATION BODY PARTNERS
 
 eHack Academy is an authorized training partner of:
 - **EC-Council** — https://www.ehackacademy.com/courses?partner=ec-council
@@ -212,87 +474,57 @@ eHack Academy is an authorized training partner of:
 
 ---
 
-## 9. ADMISSIONS & FEES
+## 15. COMMON STUDENT QUESTIONS & DETAILED ANSWERS
 
-**[FILL IN — This entire section needs to be completed by the eHack team]**
+### "I'm a 2024 graduate with no IT background. Can I learn cybersecurity?"
+Absolutely! Many successful students started with zero IT background. The Graduate Program in Ethical Hacking & Cybersecurity is specifically designed for freshers. No prior experience needed — starts from fundamentals. 85% of students are fresh graduates or career changers from non-IT backgrounds (Commerce, Arts, Management). Includes 2 Global EC-Council Certifications (CSCU + CND), 200+ hours of hands-on labs, 7-9 months structured training, and placement support.
 
-- **General Eligibility:** [e.g., 10+2 / Graduate / Any working professional]
-- **Age Limit:** [FILL IN]
-- **Payment Options:** [e.g., EMI available, full payment, corporate sponsorship]
-- **EMI / Installment Plans:** [FILL IN — banks/NBFCs, interest-free options]
-- **Batch Start Dates:** [FILL IN — upcoming batch schedule]
-- **Enrollment Link:** https://www.ehackacademy.com/offers/laptop-offer (for laptop offer)
-- **General Inquiry Form:** [FILL IN — direct counsellor booking link]
+### "Is the fee too expensive? Are there cheaper options?"
+Option 1: Advanced Diploma — ₹90,000 (Original ₹1,20,000). Same quality curriculum, same expert trainers. No international exam vouchers (main difference). EMI: ₹30,000 upfront + 4 EMIs of ₹17,500/month.
+Option 2: Graduate Program — ₹1,50,000 with EMI: ₹51,000 upfront + 4 × ₹29,750. Includes 2 global EC-Council certification exam vouchers (worth ₹40,000+). ROI: Average starting salary is ₹6-8 LPA, entire investment recovered in first 2-3 months of first job. Both programs include placement support, 200+ hours of training, and 2 years post-training support.
 
-### Fee Range (Approximate)
-| Program Type | Approx. Fee |
-|---|---|
-| Individual Certification (short) | [FILL IN] |
-| Individual Certification (long) | [FILL IN] |
-| Master/Graduate Program | [FILL IN] |
-| Kennedy University Degree | [FILL IN] |
+### "I have a career gap after graduation. Will companies still hire me?"
+The cybersecurity industry is highly skill-driven, not just degree-driven. When you hold globally recognized certifications like CEH v13 or CPENT, companies focus on practical ability to secure networks. Programs train from zero to expert with 300+ hours of hands-on labs that prove competence. Many successful students had career gaps.
 
----
+### "I am from a B.Com/non-technical background. Is hacking too hard?"
+Not at all! 85% of students are fresh graduates or career changers from non-IT backgrounds like Commerce, Arts, and Management. Programs are designed as "Zero to Hero" journey. Start with absolute basics — Networking fundamentals, Linux, and IT infrastructure — before touching advanced hacking tools.
 
-## 10. PLACEMENT & CAREER SUPPORT
+### "Do you guarantee a job?"
+No ethical institute can legally "guarantee" a job. But eHack provides robust 100% Placement Assistance: Industry-Aligned Skills (what companies are hiring for), rigorous mock interviews and resume-building sessions, dedicated Placement Cell connecting directly with top hiring partners. Freshers consistently see average starting salary of ₹6-8 LPA.
 
-**[FILL IN — This section needs to be completed by the eHack team]**
+### "Do I need a high-end laptop?"
+No. All simulations, AI tools, and vulnerable machines are hosted on cloud-based virtual labs. Basic laptop (i3/i5, 8GB RAM) with stable internet is sufficient. Premium Master's program students receive free high-performance laptop worth ₹50,000.
 
-- **Placement Assistance:** [Yes/No — describe what kind]
-- **Hiring Partners:** [FILL IN — list of companies]
-- **Average Salary After Training:** [FILL IN]
-- **Job Roles Students Typically Land:** [FILL IN — e.g., SOC Analyst, Penetration Tester, etc.]
-- **Resume & Mock Interview Support:** [FILL IN]
-- **Alumni Network:** [FILL IN — size, LinkedIn group, etc.]
+### "What if I fail the certification exam?"
+Highly unlikely — 95%+ first-attempt pass rate. Rigorous mock exams and practice tests before real exam. Even in rare cases, long-term programs include 2 Years Post-Training Support with continued mentorship until student passes. Never left behind.
 
----
+### "Can I attend a demo class before paying?"
+No standard demo classes (training involves live progressive lab work). But something better: Free 1-on-1 career counseling call and telephonic interview with industry expert. They evaluate profile, explain lab environment, show exactly how training works. No obligation.
 
-## 11. COMMON STUDENT QUESTIONS & ANSWERS
+### "I want to learn Bug Bounty, Linux, OSINT — do I need separate courses?"
+Look at EC-Council CodeRed Pro — all-access subscription to 500+ premium cybersecurity courses instead of buying individual courses. New videos monthly, certificates for each course, includes Microdegrees with iLabs access.
 
-These are ready-to-use answers the AI should give for the most frequent questions.
+### "I live outside Bangalore — how can I join?"
+Two options: (1) Live Online Training — exact same classroom experience from home with interactive live sessions and real-time lab access. (2) Relocate to Bangalore — counselors guide to nearby PG and accommodation. Both modes have same trainers, curriculum, and placement support.
 
-### "I'm a beginner — where do I start?"
-Recommend starting with foundational courses like **C|SCU** or **CompTIA A+/Network+**, then progressing to **CEH AI** or the **Graduate Cybersecurity Program**. Share the link: https://www.ehackacademy.com/categories/cybersecurity
+### "Who are the trainers?"
+EC-Council and CISCO certified experts. Many advanced modules include mentorship from CISO-level professionals. Active industry practitioners, not just teachers. Practice in real-time labs on actual vulnerabilities, not just theory.
 
-### "Which is the best course for ethical hacking?"
-The **Certified Ethical Hacker (CEH AI v13)** is the world's most recognized ethical hacking certification.
-For a complete career transformation, recommend the **CEH Master Program** (3 certs) or the **Master's Program** (6 certs).
-- CEH: https://www.ehackacademy.com/certificate/ceh-v13
-- Master Program: https://www.ehackacademy.com/programs/masters-ethical-hacking
+### "Can you train our HR and non-IT staff on phishing?"
+Yes. Under Corporate CSR and Security Training engagements, eHack specializes in employee cyber hygiene. Trained staff at major organizations like BEL and Cashfree. Teach to identify malicious '.exe' invoices, ransomware traps, and social engineering attacks.
 
-### "Is there a free laptop offer?"
-Yes! Students enrolling in the **Graduate Program** or **Master's Program in Cybersecurity**, or purchasing the **CSA + CCSE bundle** (worth ₹1,15,000), get a free laptop worth ₹50,000.
-Details: https://www.ehackacademy.com/offers/laptop-offer
+### "My father got a fake 'Digital Arrest' call. Training for senior citizens?"
+Through 'Cyber Empowerment for All' initiative, eHack specifically trains senior citizens and non-technical users. Covers Digital Arrest scams, FedEx parcel scams, KYC update traps. Sessions are simple, non-technical, focused on safe smartphone and UPI usage. Completely free community outreach. Free weekend awareness webinars.
 
-### "Do you offer online classes?"
-Yes — eHack offers **Live Online Training** with real instructors. Also available: Flexi (self-paced) and recorded content through CodeRed.
-See all formats: https://www.ehackacademy.com/learning-options
+### "I want a recognized degree, not just a certificate."
+Through academic partnership with Kennedy University: B.Sc. in Cyber Security (1-Year Fast Track), M.Sc. in Cyber Security (1-Year Fast Track), Dual Degree BSCS + MSCS (Accelerated 15-Month Program). Include EC-Council certifications, AI-powered labs, and 100% placement assistance.
 
-### "Is there EMI / installment option?"
-[FILL IN the answer with actual EMI details]
-
-### "What is the course duration?"
-Courses range from **24 hours** (C|SCU) to **3 months** (OSCP). Master programs are longer — typically [FILL IN].
-
-### "Are the certifications globally recognized?"
-Yes — eHack is an **EC-Council Authorized Training Partner**. Certifications from EC-Council, ISACA, ISC2, CompTIA, and Cisco are globally recognized across 140+ countries.
-
-### "Do I need prior experience?"
-[FILL IN — which courses need experience, which are for freshers]
-
-### "How does the exam work?"
-[FILL IN — online/offline exam, proctored/not, retake policy, voucher included or not]
-
-### "I'm a working professional — can I manage this alongside a job?"
-Yes! Options like **Flexi, 1-on-1, and Live Online** are designed for working professionals.
-
-### "Can companies train their entire team?"
-Yes! eHack offers **Customized Corporate Training** and the **Fly-Me-a-Trainer** format.
-Contact: info@ehackacademy.com | +91 98860 35330
+### "How can I finish a Bachelor's degree in 1 year?"
+B.Sc. in Cyber Security through Kennedy University is accelerated Fast Track program. 120 credits over 12 months combining IT Foundations & Network Defense, Ethical Hacking, and 6-Month Intensive Internship. Integrated with EC-Council — earn industry certifications alongside academic degree.
 
 ---
 
-## 12. SPECIAL OFFERS & PROMOTIONS
+## 16. SPECIAL OFFERS & PROMOTIONS
 
 **Free Laptop Offer (Active)**
 - Who: Students enrolling in Graduate or Master's Cybersecurity Programs
@@ -300,20 +532,9 @@ Contact: info@ehackacademy.com | +91 98860 35330
 - Benefit: Free laptop worth ₹50,000
 - Link: https://www.ehackacademy.com/offers/laptop-offer
 
-**[FILL IN — Any other ongoing offers, seasonal discounts, referral programs, scholarship schemes]**
-
 ---
 
-## 13. CORPORATE & CSR
-
-**Corporate Training Services:** https://www.ehackglobaltechnology.com/services/web-application-security  
-**CSR & Cyber Literacy Initiatives:** https://www.ehackacademy.com/csr  
-**Cyber Empowerment Program:** https://www.ehackacademy.com/cyber-empowerment  
-**Franchise Opportunity:** https://www.ehackacademy.com/franchise  
-
----
-
-## 14. IMPORTANT LINKS (Quick Reference)
+## 17. IMPORTANT LINKS (Quick Reference)
 
 | Page | URL |
 |---|---|
@@ -331,49 +552,42 @@ Contact: info@ehackacademy.com | +91 98860 35330
 
 ---
 
-## 15. RESPONSE STYLE GUIDE (READ THIS BEFORE ANSWERING)
+## 18. RESPONSE STYLE GUIDE
 
-**Tone:** Warm, helpful, knowledgeable friend — not a salesperson or textbook.  
-**Length:** Keep responses short and scannable. If a response needs to be long, break it into clear sections.  
-**Language:** Simple English. Avoid jargon unless explaining a technical concept the student asked about.  
+**Tone:** Warm, confident, genuine — like a knowledgeable friend who happens to be an expert counselor  
+**Length:** Give detailed, comprehensive answers. Use structured formatting to keep long answers scannable.  
+**Language:** Simple English. Avoid jargon unless explaining a technical concept.  
 **Formatting Rules (for chat):**
-- Use **bold** for course names, section labels
-- Use bullet points (`•`) for lists — keep each to 1 line
-- NEVER use markdown headings (#, ##, ###) — they render as giant text in the chat
-- Always include a clickable link when recommending a course
-- Use the course link format: `[Course Name](URL)` — links go to ehackacademy.com
+- Use **bold** for program names, section labels, important data
+- Use bullet points (•) and checklists (✅) for lists
+- NEVER use markdown headings (#, ##, ###)
+- Always include clickable links when recommending a course: `[Course Name](URL)`
+- End every message with ONE clear next step or CTA
+- For fee discussions, always include ROI perspective
+- For objection handling, acknowledge concern first, then reframe positively
 
 **Personality Traits:**
 - 👋 Welcoming and approachable  
-- 📚 Knowledgeable about all courses  
+- 📚 Knowledgeable about all courses with specific data points  
 - 🎯 Goal-oriented — help students pick the RIGHT path for THEM  
-- ❌ Never pushy or salesy  
-- ✅ Honest — if you don't know something, say "For the latest info, please check [course page link] or contact us at info@ehackacademy.com"  
+- 💪 Confident in eHack's value proposition  
+- ❌ Never pushy or salesy — let data speak  
+- ✅ Honest — if unsure, direct to counsellor  
 
-**When a Student Asks About a Course:**
-Always respond with this structure:
-1. Short 1-line intro (what the course is for)
-2. Key highlights in bullets (2–4 max)
-3. [Course Name](URL) link
-4. Optional: next step ("Want me to compare this with another course?")
+**When a Student Asks About a Course, Always Include:**
+1. Duration, fee, EMI option
+2. Key highlights in bullets (3-5)
+3. Who it's best for
+4. Career outcome / salary data
+5. Link to course page
+6. Clear next step CTA
 
-**Escalation — When to Ask for Human Help:**
-If the student asks about:
-- Exact fees or EMIs → Direct to "info@ehackacademy.com or call +91 98860 35330"
-- Specific batch dates → [FILL IN — direct to a booking link or say "our team will reach out"]
-- Complaints or refunds → Direct to info@ehackacademy.com
-- Kennedy University admissions → Direct to https://www.ehackacademy.com/kennedy-university
-
-**Things the Bot Should NEVER Do:**
-- ❌ Make up fees, durations, or dates not in this document
-- ❌ Guarantee employment or salary
-- ❌ Speak negatively about competitors
-- ❌ Commit to discounts without counsellor approval
-- ❌ Share any student's personal data
+**Escalation — When to Refer to Human:**
+For complaints, refunds, very specific batch scheduling → Direct to info@ehackacademy.com or +91 98860 35330
 
 ---
 
-## 16. LEGAL DISCLAIMER
+## 19. LEGAL DISCLAIMER
 
 **Important — include this when relevant:**  
 eHack Academy acts as a **training and facilitation partner only**. All certifications are awarded by EC-Council, ISACA, ISC², CompTIA, Cisco, or Offensive Security as per their norms. Degrees are awarded solely by Kennedy University.  
@@ -381,5 +595,5 @@ Students should independently verify accreditation from the respective official 
 
 ---
 
-*Last updated: March 2026 | Maintained by: eHack Academy Team*  
+*Last updated: April 2026 | Maintained by: eHack Academy Team*  
 *To update this document, edit this file and re-run the RAG ingest pipeline.*
