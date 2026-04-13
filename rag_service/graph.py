@@ -222,7 +222,7 @@ Batches start 5th of every month. Seats fill up fast.
 • If user asks about a program → Give details neutrally without assuming their background
 • If beginner / student / fresher → Recommend Graduate Program
 • If user EXPLICITLY says non-IT background → Then mention "85% of students are from non-IT backgrounds" as reassurance
-• If budget-conscious → Show Advanced Diploma (₹90k) AND Graduate Program EMI option
+• If budget-conscious → Check topic! If Cybersecurity: Show Advanced Diploma (₹90k) AND Graduate Program EMI option. If Digital Marketing: Focus on ROI and EMI options for the DM program.
 • If wants premium / advanced → Recommend Master's Program (mention Graduate as affordable alternative)
 • If wants CEH focus → Recommend CEH v13 Master's (mention Master's has CEH too)
 • If unsure / confused → Recommend Graduate Program as safest bet
@@ -236,20 +236,24 @@ Batches start 5th of every month. Seats fill up fast.
 • For CSR/college workshop → Free Cyber Awareness workshops
 • For senior citizen safety → Cyber Empowerment initiative
 
-PRICE HIERARCHY (cheapest to most expensive) — follow this when user asks for cheaper options:
+PRICE HIERARCHY / BUDGET OPTIONS — VERY IMPORTANT: MATCH THE CURRENT TOPIC!
+• CYBERSECURITY:
   1. Individual certifications (contact counsellor for pricing) — single cert courses
   2. Advanced Diploma — ₹90,000 (CHEAPEST comprehensive program with placement support)
-  3. Digital Marketing — ₹95,000
-  4. Graduate Program — ₹1,50,000
-  5. Master's Program — ₹3,50,000
+  3. Graduate Program — ₹1,50,000
+  4. Master's Program — ₹3,50,000
 
-If user already knows about Advanced Diploma and asks for cheaper → Tell them Advanced Diploma IS the most affordable comprehensive program we offer. For even lower budget, suggest individual certification courses from EC-Council, CompTIA, ISACA etc. (no placement support, single cert only).
+• DIGITAL MARKETING:
+  1. Digital Marketing Master's Program — ₹95,000 (Only comprehensive option; highlight ROI/EMI)
+
+If user asks for cheaper options while discussing Digital Marketing, simply say NO. Politely explain that we do not have any cheaper alternatives, standalone courses, or internship programs for Digital Marketing. Emphasize that the ₹95,000 Master's Program is our only offering because it provides premium, agency-style hands-on training with an excellent ROI. End the message with a CTA to speak to a counselor for EMI or financing options.
+If user asks for cheaper cybersecurity options → Suggest Advanced Diploma. If they want even cheaper, suggest individual certification courses from EC-Council, CompTIA, ISACA etc. (no placement support, single cert only).
 
 ━━━━━━━━━━━━━━━━━━
  G. OBJECTION HANDLING (USE SPECIFIC DATA)
 ━━━━━━━━━━━━━━━━━━
-"Too expensive" (first time) → Show ₹90k Advanced Diploma + ₹1.5L Graduate EMI option. ROI: avg starting salary ₹6–8 LPA = recover investment in 2–3 months of first job.
-"Still too expensive" / "something even cheaper" (after showing Diploma) → Explain that ₹90,000 Advanced Diploma is our most affordable comprehensive program with placement support. For even lower investment, suggest individual certification courses (CEH, CND, CCNA, Security+ etc.) — contact counsellor for individual course pricing. Mention that individual certs don't include the bundled benefits (placement support, internship, 2-year membership).
+"Too expensive" (first time) → If Cybersecurity: Show ₹90k Advanced Diploma + ₹1.5L Graduate EMI option. If Digital Marketing: Emphasize ROI (starting salary ₹3–4 LPA) and EMI options for the ₹95,000 DM program.
+"Still too expensive" / "something even cheaper" (after showing Diploma) → If Cybersecurity: Explain that ₹90,000 Advanced Diploma is our most affordable comprehensive program. For even lower investment, suggest individual certification courses. If Digital Marketing: Simply say NO. Explain that we do not offer any cheaper digital marketing options or internships. Provide a brief description of why the premium ₹95k program is worth the investment, then use a CTA to redirect them to the counselor.
 "Why eHack over others?" → Classroom+Live Online training, real EC-Council labs, certs included in fee, placement until hired, 7-12 months comprehensive, EC-Council & CISCO certified faculty, free laptop ₹50k. Others often self-paced video or 5-day bootcamps.
 "No IT background" → 85% of students come from non-IT backgrounds. Programs are Zero to Hero — start with Networking, Linux, IT infrastructure basics.
 "Career gap" → Cybersecurity is skill-driven. Globally recognized certs like CEH v13 or CPENT = companies focus on practical ability. Many successful students had career gaps.
@@ -312,7 +316,36 @@ For complaints, refunds, very specific scheduling:
 # ─────────────────────────────────────────────────────────────────────
 def retrieve(state: ChatState):
     query = state["query"]
-    docs = retriever.invoke(query)
+    history = state.get("history", [])
+    search_query = query
+
+    if history:
+        # Contextualize query based on history to handle topic shifts
+        messages = [
+            SystemMessage(content="""Given the conversation history and the latest user query, rephrase the latest user query into a standalone search query that embodies the current context and topic being discussed.
+For example, if the user was discussing 'Digital Marketing' and asks 'any cheaper options?', rephrase it to 'cheaper options for digital marketing'.
+If the query is already standalone, just return it as is.
+DO NOT answer the question. ONLY output the standalone search query without quotes.""")
+        ]
+        
+        # Pull the last few turns for context
+        for msg in history[-6:]:
+            role = msg.get("role", "")
+            content = msg.get("content", "")
+            if not content:
+                continue
+            if role == "user":
+                messages.append(HumanMessage(content=content))
+            elif role == "assistant":
+                messages.append(AIMessage(content=content))
+                
+        messages.append(HumanMessage(content=f"Latest User Query: {query}\n\nPlease provide only the standalone search query:"))
+        
+        search_query_response = llm.invoke(messages)
+        search_query = search_query_response.content.strip().strip('"').strip("'")
+        print(f"[RAG] Original Query: '{query}' -> Rewritten Search Query: '{search_query}'")
+
+    docs = retriever.invoke(search_query)
     context = "\n\n".join(d.page_content for d in docs)
     return {"context": context}
 
